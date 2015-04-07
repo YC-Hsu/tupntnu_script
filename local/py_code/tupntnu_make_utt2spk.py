@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import os,re,sys
 
 if len(sys.argv) != 2 :

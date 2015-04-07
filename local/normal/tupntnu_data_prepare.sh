@@ -45,7 +45,7 @@ mkdir -p $train_dir
 
 echo "prepare TUP_NTNU $train_dir ..."
 echo "prepare file $train_dir/text ..."
-python local/py_code/tupntnu_make_text.py -l $l -p $p $corpus_info $train_dir/text
+python local/py_code/tupntnu_make_text.py -l $l -p $p $corpus_dir $corpus_info $train_dir/text
 echo "prepare file $train_dir/wav.scp ..."
 python local/py_code/tupntnu_make_wavscp.py $train_dir/text $train_dir/wav.scp $corpus_dir
 echo "prepare file utt2spk ..."
